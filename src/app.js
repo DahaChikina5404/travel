@@ -20,7 +20,7 @@ function renderTours(tours) {
         document.getElementById('container__with_tours').innerHTML += `
             <div class="content_card">
 
-                <img class="h-80" src="${tour.image}"/>
+                <img class="h-80 mx-2 my-2" src="${tour.image}"/>
                 <p class="text-2xl px-2 py-5">${tour.country}</p>
                 <p class="text-2xl px-2">${tour.city}</p>
                 <p class="px-2 text-justify">${tour.hotelName}</p>
@@ -36,9 +36,9 @@ function renderTours(tours) {
                 </div>
 
                 <div class="flex gap-1 px-2 py-5">
-                    ${format(new Date(tour.startTime), 'dd MMMM yyyy', {local: ru})} 
+                    ${format(new Date(tour.startTime), 'dd MMMM yyyy', {locale: ru})} 
                         - 
-                    ${format(new Date(tour.endTime), 'dd MMMM yyyy', {local: ru})};
+                    ${format(new Date(tour.endTime), 'dd MMMM yyyy', {locale: ru})};
                     продолжительность: ${duration}
                 </div>
 
@@ -51,25 +51,35 @@ function renderTours(tours) {
     })
 }
 
+
+// Фильтр
+
+function filterByCountry(tours, country) {
+    if (country) {
+        const filteredTours = tours.filter((tour) => {
+            return tour.country === country
+        })
+        renderTours(filteredTours)
+    } else {
+        renderTours(tours)
+    }
+}
+   
+
+
 // Связываем две функции 
 async function running() {
     const tours = await loadTours()
     renderTours(tours)
+
+    document.getElementById('kipr').addEventListener('click', () => filterByCountry(tours, 'Кипр'))
+    document.getElementById('maldivi').addEventListener('click', () => filterByCountry(tours, 'Мальдивы'))
+    document.getElementById('tailand').addEventListener('click', () => filterByCountry(tours, 'Тайланд'))
+    document.getElementById('mexica').addEventListener('click', () => filterByCountry(tours, 'Мексика'))
+    document.getElementById('all').addEventListener('click', () => filterByCountry(tours))
 }
 
 
-// Условие на отображение поля "Город" (если оно заполнено)
-async function filterCity(tours, city) {
-    if (city === null) {
-    const empty = tours.filter((tour) => {
-        return tour.city === city
-        })
-    renderTours(empty)
-}
-    else {
-        renderTours(tours)
-    }
-}
 
 running()
-filterCity()
+filterByCountry(tours, country)
