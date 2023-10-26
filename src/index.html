@@ -17,14 +17,13 @@
                     <button class="btn_style">Добавить маршрут</button>
                 </div>
 
-                <div class="text-center my-14"> 
+                <!-- <div class="text-center my-14"> 
                     <h1 class="text-4xl font-medium italic pb-10 md:text-6xl">Знакомство с волшебным Сахалином</h1>
                     <p class="text-2xl font-light">Приглашаем Вас в незабываемое путешествие по острову Сахалину</p>
-                </div>
+                </div> -->
 
-                <div class="gap-10 grid grid-cols-1 md:grid-cols-2">
+        <!--    <div class="gap-10 grid grid-cols-1 md:grid-cols-2">
 
-<!-- Карточка маршрута 1 начало-->
                     <div class="content_card">
                         <img class="h-100 mx-2 my-2" src="/src/image/aniva.jpg" alt="маяк Анива"/>
                         <a class="text-blue-500 underline px-2" href="#">Джип/лодка</a>
@@ -63,10 +62,8 @@
                             </div>
                         </div>    
                     </div>
-<!-- Карточка маршрута 1 конец-->
 
 
-<!-- Карточка маршрута 2 начало-->
                     <div class="content_card">
                         <img class="h-100 mx-2 my-2" src="/src/image/krilon.jpg" alt="мыс Крильон"/>
                         <a class="text-blue-500 underline px-2" href="#">Джип</a>
@@ -105,10 +102,8 @@
                             </div>
                         </div>
                     </div>
-<!-- Карточка маршрута 2 конец-->
 
 
-<!-- Карточка маршрута 3 начало-->
                     <div class="content_card">
                         <img class="h-100 mx-2 my-2" src="/src/image/slep.jpg" alt="маяк Слепиковского"/>
                         <a class="text-blue-500 underline px-2" href="#">Джип</a>
@@ -147,10 +142,8 @@
                             </div>
                         </div>    
                     </div>
-<!-- Карточка маршрута 3 конец-->
 
 
-<!-- Карточка маршрута 4 начало-->
                     <div class="content_card">
                         <img class="h-100 mx-2 my-2" src="/src/image/torii.jpg" alt="врата Тории"/>
                         <a class="text-blue-500 underline px-2" href="#">Джип</a>
@@ -189,10 +182,8 @@
                             </div>
                         </div>    
                     </div>
-<!-- Карточка маршрута 4 конец-->
 
 
-<!-- Карточка маршрута 5 начало-->
                     <div class="content_card">
                         <img class="h-100 mx-2 my-2" src="/src/image/kuznec.jpg" alt="мыс Кузнецова"/>
                         <a class="text-blue-500 underline px-2" href="#">Джип</a>
@@ -231,10 +222,8 @@
                             </div>
                         </div>
                     </div>
-<!-- Карточка маршрута 5 конец-->
 
 
-<!-- Карточка маршрута 6 начало-->
                     <div class="content_card">
                         <img class="h-100 mx-2 my-2" src="/src/image/tihaya.jpg" alt="бухта Тихая"/>
                         <a class="text-blue-500 underline px-2" href="#">Джип</a>
@@ -273,10 +262,10 @@
                             </div>
                         </div>    
                     </div>
-<!-- Карточка маршрута 6 конец-->
-                </div>
+Карточка маршрута 6 конец
+                </div> -->
 
-<!-- Добавление тура с сервера -->
+
 
                 <div class="text-center my-10"> 
                     <h1 class="text-4xl font-medium italic pt-10 pb-10 md:text-6xl">Наши заграничные туры</h1>
@@ -289,7 +278,100 @@
                 <button id="mexica" class="btn_style">Мексика</button>
                 <button id="all" class="btn_style">Показать все туры</button>
 
+<!-- Дропдаун -->
+              
+                <div class="relative">
+                    <div>
+                        <button id="dropdown-button" class="btn_style w-full flex justify-between">
+                            Отфильтровать по
+                            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <div id="dropdown-menu" class="absolute hidden right-0 w-1/6 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div class="py-2 flex flex-col justify-between gap-3 rounded-2xl bg-white shadow-xl">
+                            <a href="#" class="text-gray-700 px-4 text-sm">рейтингу</a>
+                            <a href="#" class="text-gray-700 px-4 text-sm">цене</a>
+                            <a href="#" class="text-gray-700 px-4 text-sm">дате</a>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Добавление тура с сервера -->
+
                 <div id="container__with_tours" class="gap-10 grid grid-cols-1 md:grid-cols-2"></div>
+
+<!-- Модальное окно для выбора тура -->
+                <div id="add_modal" class="hidden m-auto flex-col gap-1 bg-red-200 justify-centre inset-0 fixed items-center w-1/2 h-1/2">
+
+<!-- Данные о выбранном туре -->
+                    <div class="flex flex-row gap-5">
+                        
+                        <svg id="close_modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                          
+                        <div>
+                            <p>Страна</p>
+                            <input class="input_tour" id="country_order"/>
+                        </div>
+                        <div>
+                            <p>Город</p>
+                            <input class="input_tour" id="city_order"/>
+                        </div>
+                        <div>
+                            <p>Отель</p>
+                            <input class="input_tour" id="hotelName_order"/>
+                        </div>
+                        <div>
+                            <p>Рейтинг</p>
+                            <input class="input_tour" id="rating_order"/>
+                        </div>
+                        <div>
+                            <p>Стоимость</p>
+                            <input class="input_tour" id="price_order"/>
+                        </div>
+                        <div>
+                            <p>Дата начала</p>
+                            <input class="input_tour" id="startTime_order"/>
+                        </div>
+                        <div>
+                            <p>Дата окончания</p>
+                            <input class="input_tour" id="endTime_order"/>
+                        </div>
+                    </div>
+
+<!-- Данные о покупателе-->
+
+                    <div class="flex flex-row gap-5">
+
+
+                        <p id="error">Заполните все поля</p>
+
+                        <div>
+                            <p>Ваша фамилия</p>
+                            <input class="input_tour" id="name"/>
+                        </div>
+                        <div>
+                            <p>Ваше имя</p>
+                            <input class="input_tour" id="surname"/>
+                        </div>
+                        <div>
+                            <p>Телефон</p>
+                            <input class="input_tour" id="phone"/>
+                        </div>
+                        <div>
+                            <p>e-mail</p>
+                            <input class="input_tour" id="mail"/>
+                        </div>
+
+                    </div>
+
+                    <button id="btn_order-tour" class="btn_style">Выбрать тур</button>	
+                </div>
             </div>
         </div>
     </body>
