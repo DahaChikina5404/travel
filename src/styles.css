@@ -9,12 +9,3 @@
 .content_card {
     @apply flex flex-col justify-between gap-2 border border-solid border-gray-400 rounded-2xl bg-white shadow-xl;
 }
-
-.btn-color {
-    border: solid 1px red;
-    background-color: blueviolet;
-}
-
-.input_tour {
-    @apply border border-solid border-blue-500 rounded-md mx-1;
-}
