@@ -1,11 +1,12 @@
 {
-    "name": "sakhalin",
+    "name": "Turist",
     "scripts": {
         "dev": "parcel src/index.html",
         "build": "parcel build src/index.html",
         "format": "yarn prettier --write ."
     },
     "devDependencies": {
+        "@parcel/resolver-default": "^2.10.2",
         "@parcel/transformer-sass": "2.9.3",
         "parcel": "^2.9.3",
         "postcss": "^8.4.30",
@@ -14,6 +15,7 @@
     },
     "dependencies": {
         "date-fns": "^2.30.0",
-        "sass": "^1.68.0"
+        "flowbite": "^2.0.0",
+        "sweetalert2": "^11.9.0"
     }
 }

@@ -3,376 +3,124 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <title>Sakhalin</title>
+        <title>Turist</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <script type="module" src="app.js"></script>
     </head>
 
     <body>
         <div class="bg-sky-100">
-            <div class="max-w-6xl m-auto py-8 px-2">
-
-                <div class="flex justify-end gap-2">
-                    <button class="btn_style">Избранное</button>
-                    <button class="btn_style">Добавить маршрут</button>
-                </div>
-
-                <!-- <div class="text-center my-14"> 
-                    <h1 class="text-4xl font-medium italic pb-10 md:text-6xl">Знакомство с волшебным Сахалином</h1>
-                    <p class="text-2xl font-light">Приглашаем Вас в незабываемое путешествие по острову Сахалину</p>
-                </div> -->
-
-        <!--    <div class="gap-10 grid grid-cols-1 md:grid-cols-2">
-
-                    <div class="content_card">
-                        <img class="h-100 mx-2 my-2" src="/src/image/aniva.jpg" alt="маяк Анива"/>
-                        <a class="text-blue-500 underline px-2" href="#">Джип/лодка</a>
-                        <p class="text-2xl px-2">Маяк Анива</p>
-
-                        <p class="px-2 text-justify">Экскурсия на Маяк Анива входит в список самых популярных и посещаемых мест на Сахалине и в России.
-                        </p>
-        
-                        <div>
-                            <div class="flex gap-1 px-2 py-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                                </svg>
-                                
-                                <span>Сложность средняя</span>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span>8 часов</span>
-
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-
-                                <span>6 000 руб.</span>
-                            </div>
-
-                            <div class="px-2">
-                                <button class="btn_style">Подробнее</button>
-                                <button class="btn_style">Добавить в избранное</button>
-                            </div>
-                        </div>    
-                    </div>
-
-
-                    <div class="content_card">
-                        <img class="h-100 mx-2 my-2" src="/src/image/krilon.jpg" alt="мыс Крильон"/>
-                        <a class="text-blue-500 underline px-2" href="#">Джип</a>
-                        <p class="text-2xl px-2">Мыс Крильон</p>
-
-                        <p class="px-2 text-justify">Мыс Крильон — южная конечная точка Сахалина. На мысе сохранились старинные постройки. Укрепрайон со времен военных действий 1945 года, военные оборонительные объекты. 
-                        </p>
-                           
-                        <div>
-                            <div class="flex gap-1 px-2 py-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                                </svg>
-                                    
-                                <span>Сложность высокая</span>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                    
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span>19 часов</span>
-
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-
-                                <span>11 000 руб.</span>
-                            </div>
-
-                            <div class="px-2">
-                                <button class="btn_style">Подробнее</button>
-                                <button class="btn_style">Добавить в избранное</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="content_card">
-                        <img class="h-100 mx-2 my-2" src="/src/image/slep.jpg" alt="маяк Слепиковского"/>
-                        <a class="text-blue-500 underline px-2" href="#">Джип</a>
-                        <p class="text-2xl px-2">Маяк Слепиковского</p>
-
-                        <p class="px-2 text-justify">Маяк на мысе Слепиковского построен японцами в 1934 году, когда южная часть Сахалина была префектурой Карафуто, входившей в состав Японской империи. Высота маяка 27 метров.
-                        </p>
-                        
-                        <div>
-                            <div class="flex gap-1 px-2 py-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                                </svg>
-                                
-                                <span>Сложность легкая</span>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span>6 часов</span>
-
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-
-                                <span>6 000 руб.</span>
-                            </div>
-
-                            <div class="px-2">
-                                <button class="btn_style">Подробнее</button>
-                                <button class="btn_style">Добавить в избранное</button>
-                            </div>
-                        </div>    
-                    </div>
-
-
-                    <div class="content_card">
-                        <img class="h-100 mx-2 my-2" src="/src/image/torii.jpg" alt="врата Тории"/>
-                        <a class="text-blue-500 underline px-2" href="#">Джип</a>
-                        <p class="text-2xl px-2">Врата Тории</p>
-
-                        <p class="px-2 text-justify">Ворота тории — символический вход в синтоистский храм дзиндзя.  Их построили в 1940 году. В то время здесь находились японский порт, и храм Хигаши Сираура дзиндзя — «Восточный дом Бога».
-                        </p>
-                    
-                        <div>
-                            <div class="flex gap-1 px-2 py-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                                </svg>
-                                
-                                <span>Сложность легкая</span>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span>3 часа</span>
-
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-
-                                <span>4 000 руб.</span>
-                            </div>
-
-                            <div class="px-2">
-                                <button class="btn_style">Подробнее</button>
-                                <button class="btn_style">Добавить в избранное</button>
-                            </div>
-                        </div>    
-                    </div>
-
-
-                    <div class="content_card">
-                        <img class="h-100 mx-2 my-2" src="/src/image/kuznec.jpg" alt="мыс Кузнецова"/>
-                        <a class="text-blue-500 underline px-2" href="#">Джип</a>
-                        <p class="text-2xl px-2">Мыс Кузнецова</p>
-
-                        <p class="px-2 text-justify">Покорите вершину — посмотрите на Сахалинский край с высоты мыса Кузнецова. Понаблюдайте за нерпами и сивучами, у которых там круглогодичное лежбище.
-                        </p>
-                
-                        <div>
-                            <div class="flex gap-1 px-2 py-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                                </svg>
-                                    
-                                <span>Сложность высокая</span>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                    
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span>12 часов</span>
-
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-
-                                <span>8 000 руб.</span>
-                            </div>
-
-                            <div class="px-2">
-                                <button class="btn_style">Подробнее</button>
-                                <button class="btn_style">Добавить в избранное</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="content_card">
-                        <img class="h-100 mx-2 my-2" src="/src/image/tihaya.jpg" alt="бухта Тихая"/>
-                        <a class="text-blue-500 underline px-2" href="#">Джип</a>
-                        <p class="text-2xl px-2">Бухта Тихая</p>
-
-                        <p class="px-2 text-justify">Бухта Тихая — это одна из главных достопримечательностей Сахалина. Представляет собой небольшую гавань в заливе Терпения.
-                        </p>
-                     
-                        <div>
-                            <div class="flex gap-1 px-2 py-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                                </svg>
-                                
-                                <span>Сложность легкая</span>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span>5 часов</span>
-
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-
-                                <span>6 000 руб.</span>
-                            </div>
-
-                            <div class="px-2">
-                                <button class="btn_style">Подробнее</button>
-                                <button class="btn_style">Добавить в избранное</button>
-                            </div>
-                        </div>    
-                    </div>
-Карточка маршрута 6 конец
-                </div> -->
-
-
-
-                <div class="text-center my-10"> 
-                    <h1 class="text-4xl font-medium italic pt-10 pb-10 md:text-6xl">Наши заграничные туры</h1>
+            <div class="max-w-6xl m-auto py-8 px-3">
+                <div class="text-center my-5"> 
+                    <h1 class="text-4xl font-medium italic pt-5 pb-10 md:text-6xl">Наши лучшие предложения</h1>
                     <p class="text-2xl font-light">Вы можете выбрать любой подходящий для Вас тур</p>
                 </div>
 
-                <button id="kipr" class="btn_style">Кипр</button>
-                <button id="maldivi" class="btn_style">Мальдивы</button>
-                <button id="tailand" class="btn_style">Тайланд</button>
-                <button id="mexica" class="btn_style">Мексика</button>
-                <button id="all" class="btn_style">Показать все туры</button>
-
+                <div class="flex justify-center">
+                    <button data-country="Кипр" class="btn_style country-filter">Кипр</button>
+                    <button data-country="Мальдивы"class="btn_style country-filter">Мальдивы</button>
+                    <button data-country="Тайланд"class="btn_style country-filter">Тайланд</button>
+                    <button data-country="Мексика" class="btn_style country-filter">Мексика</button>
+                    <button data-country="Египет" class="btn_style country-filter">Египет</button>
+                    <button data-country="Индонезия" class="btn_style country-filter">Индонезия</button>
+                    <button data-country="Танзания" class="btn_style country-filter">Танзания</button>
+                    <button data-country="all" class="btn_style country-filter">Показать все туры</button>
+                </div>
+                
 <!-- Дропдаун -->
-              
-                <div class="relative">
-                    <div>
-                        <button id="dropdown-button" class="btn_style w-full flex justify-between">
-                            Отфильтровать по
-                            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+
+                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="btn_style w-1/3 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-3 text-justify flex justify-between items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Показать туры
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg>
+                </button>
+
+<!-- Dropdown menu -->
+                <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
+                    <ul class="py-2 text-md text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                        <div class="flex justify-start items-center px-3 py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-800">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
                             </svg>
-                        </button>
-                    </div>
-
-
-                    <div id="dropdown-menu" class="absolute hidden right-0 w-1/6 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div class="py-2 flex flex-col justify-between gap-3 rounded-2xl bg-white shadow-xl">
-                            <a href="#" class="text-gray-700 px-4 text-sm">рейтингу</a>
-                            <a href="#" class="text-gray-700 px-4 text-sm">цене</a>
-                            <a href="#" class="text-gray-700 px-4 text-sm">дате</a>
+                            <li>
+                                <a href="#" id="highPrice" class="block px-1 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">по убыванию стоимости</a>
+                            </li>
                         </div>
-                    </div>
+
+                        <div class="flex justify-start items-center px-3 py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-red-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+                            </svg>
+                            <li>
+                                <a href="#" id="lowPrice" class="block px-1 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">по возрастанию стоимости</a>
+                            </li>
+                        </div>
+
+                        <div class="flex justify-start items-center px-3 py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-800">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <li>
+                                <a href="#" id="shortTour" class="block px-1 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">сначала самые короткие туры</a>
+                            </li>
+                        </div>
+
+                        <div class="flex justify-start items-center px-3 py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-red-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <li>
+                                <a href="#" id="longTour" class="block px-1 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">сначала самые длинные туры</a>
+                            </li>
+                        </div>
+                    </ul>
                 </div>
 
-<!-- Добавление тура с сервера -->
+<!-- Загрузка (анимация) -->
 
+                <div id="loader" class="container_load mt-5"></div>
+                    
+<!-- Добавление туров с сервера -->
                 <div id="container__with_tours" class="gap-10 grid grid-cols-1 md:grid-cols-2"></div>
 
 <!-- Модальное окно для выбора тура -->
-                <div id="add_modal" class="hidden m-auto flex-col gap-1 bg-red-200 justify-centre inset-0 fixed items-center w-1/2 h-1/2">
+                <div id="add_modal" class="hidden flex-col m-auto bg-blue-100 fixed inset-0 justify-center rounded-2xl w-1/2 h-max px-2 py-2">
 
-<!-- Данные о выбранном туре -->
-                    <div class="flex flex-row gap-5">
-                        
-                        <svg id="close_modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <div class="flex flex-row justify-end">
+                        <svg id="close_modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                          
-                        <div>
-                            <p>Страна</p>
-                            <input class="input_tour" id="country_order"/>
-                        </div>
-                        <div>
-                            <p>Город</p>
-                            <input class="input_tour" id="city_order"/>
-                        </div>
-                        <div>
-                            <p>Отель</p>
-                            <input class="input_tour" id="hotelName_order"/>
-                        </div>
-                        <div>
-                            <p>Рейтинг</p>
-                            <input class="input_tour" id="rating_order"/>
-                        </div>
-                        <div>
-                            <p>Стоимость</p>
-                            <input class="input_tour" id="price_order"/>
-                        </div>
-                        <div>
-                            <p>Дата начала</p>
-                            <input class="input_tour" id="startTime_order"/>
-                        </div>
-                        <div>
-                            <p>Дата окончания</p>
-                            <input class="input_tour" id="endTime_order"/>
-                        </div>
                     </div>
 
+                    <div class="gap-5 grid grid-cols-1 md:grid-cols-2">
+<!-- Данные о выбранном туре -->
+                        <div id="selectTour" class="px-3 py-2"></div>
+                    
 <!-- Данные о покупателе-->
+                        <fieldset class="flex flex-col gap-5 justify-between">
+                            <div>
+                                <p class="text-xl">Ваша фамилия, имя *</p>
+                                <input class="rounded-xl w-full h-8" id="surnameClient"/>
+                            </div>
+                            <div>
+                                <p class="text-xl">Телефон *</p>
+                                <input class="rounded-xl w-full h-8" id="phoneClient"/>
+                            </div>
+                            <div>
+                            <p class="text-xl">e-mail *</p>
+                                <input class="rounded-xl w-full h-8" id="mailClient"/>
+                            </div>
+                            <div>
+                                <p class="text-xl">Комментарий</p>
+                                <textarea class="rounded-xl w-full" id="commentClient"></textarea>
+                            </div>
+                            <button id="btn_order-tour" class="btn_style">Отправить заявку</button> 
+                        </fieldset>
 
-                    <div class="flex flex-row gap-5">
-
-
-                        <p id="error">Заполните все поля</p>
-
-                        <div>
-                            <p>Ваша фамилия</p>
-                            <input class="input_tour" id="name"/>
-                        </div>
-                        <div>
-                            <p>Ваше имя</p>
-                            <input class="input_tour" id="surname"/>
-                        </div>
-                        <div>
-                            <p>Телефон</p>
-                            <input class="input_tour" id="phone"/>
-                        </div>
-                        <div>
-                            <p>e-mail</p>
-                            <input class="input_tour" id="mail"/>
-                        </div>
-
-                    </div>
-
-                    <button id="btn_order-tour" class="btn_style">Выбрать тур</button>	
+                    </div>    
                 </div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
     </body>
 </html>
