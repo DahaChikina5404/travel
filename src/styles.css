@@ -7,7 +7,7 @@
 }
 
 .content_card {
-    @apply flex flex-col justify-between gap-2 border border-solid border-gray-400 rounded-2xl bg-white shadow-xl;
+    @apply my-2 flex flex-col justify-between gap-2 border border-solid border-gray-400 rounded-2xl bg-white shadow-xl;
 }
 
 .container_load {

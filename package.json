@@ -1,5 +1,5 @@
 {
-    "name": "Turist",
+    "name": "Travel",
     "scripts": {
         "dev": "parcel src/index.html",
         "build": "parcel build src/index.html",
