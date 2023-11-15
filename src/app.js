@@ -127,7 +127,7 @@ function openModal(id) {
         document.getElementById('selectTour').innerHTML += `
 
             <div class="flex flex-col gap-2 justify-between">
-                <img class="h-40 w-45 rounded-xl" src="${selectedTour.image}"/>
+                <img class="h-20 w-20 sm:h-40 sm:w-full rounded-xl" src="${selectedTour.image}"/>
                 <p id="country_order" class="text-2xl italic">${selectedTour.country}</p>
                 <p id="city_order" class="text-2xl">${getCity(selectedTour)}</p>
                 <p id="hotelName_order">${selectedTour.hotelName}</p>

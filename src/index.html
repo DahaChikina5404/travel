@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <title>Turist</title>
+        <title>Лучшие туры</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <script type="module" src="app.js"></script>
     </head>
@@ -28,8 +28,7 @@
                 </div>
                 
 <!-- Дропдаун -->
-
-                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="btn_style w-full md:w-1/3 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-3 text-justify flex justify-between items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Показать туры
+                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="btn_style w-full md:w-1/3 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 text-justify flex justify-between items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Показать туры
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                     </svg>
@@ -39,8 +38,8 @@
                 <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
                     <ul class="py-2 text-md text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
                         <div class="flex justify-start items-center px-3 py-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-800">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-800 fill-current">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.49707 2.6875C5.04936 2.6875 5.49707 3.13522 5.49707 3.6875V16.4926L6.88689 15.1028C7.27741 14.7123 7.91058 14.7123 8.3011 15.1028C8.69163 15.4934 8.69163 16.1265 8.3011 16.517L5.34853 19.4696C4.87989 19.9383 4.12007 19.9382 3.65144 19.4696L0.699115 16.517C0.308606 16.1265 0.308631 15.4933 0.699171 15.1028C1.08971 14.7123 1.72288 14.7123 2.11338 15.1029L3.49707 16.4867V3.6875C3.49707 3.13522 3.94479 2.6875 4.49707 2.6875ZM11.2236 6.27039C10.6713 6.27039 10.2236 5.82267 10.2236 5.27039C10.2236 4.7181 10.6713 4.27039 11.2236 4.27039H13.0146C13.5669 4.27039 14.0146 4.7181 14.0146 5.27039C14.0146 5.82267 13.5669 6.27039 13.0146 6.27039H11.2236ZM11.2236 10.7628C10.6713 10.7628 10.2236 10.3151 10.2236 9.76282C10.2236 9.21053 10.6713 8.76282 11.2236 8.76282H15.8868C16.4391 8.76282 16.8868 9.21053 16.8868 9.76282C16.8868 10.3151 16.4391 10.7628 15.8868 10.7628H11.2236ZM10.2236 14.2865C10.2236 14.8388 10.6713 15.2865 11.2236 15.2865H18.7969C19.3492 15.2865 19.7969 14.8388 19.7969 14.2865C19.7969 13.7342 19.3492 13.2865 18.7969 13.2865H11.2236C10.6713 13.2865 10.2236 13.7342 10.2236 14.2865ZM11.2236 19.7686C10.6713 19.7686 10.2236 19.3208 10.2236 18.7686C10.2236 18.2163 10.6713 17.7686 11.2236 17.7686H21.799C22.3513 17.7686 22.799 18.2163 22.799 18.7686C22.799 19.3208 22.3513 19.7686 21.799 19.7686H11.2236Z"></path>
                             </svg>
                             <li>
                                 <a href="#" id="highPrice" class="block px-1 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">по убыванию стоимости</a>
@@ -48,8 +47,8 @@
                         </div>
 
                         <div class="flex justify-start items-center px-3 py-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-red-600">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-800 fill-current">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11338 8.97604C1.72288 9.36658 1.08971 9.3666 0.699171 8.97609C0.308631 8.58558 0.308606 7.95242 0.699115 7.56188L3.65144 4.60932C4.12007 4.14066 4.87989 4.14064 5.34853 4.60928L8.3011 7.56185C8.69163 7.95238 8.69163 8.58554 8.3011 8.97607C7.91058 9.36659 7.27741 9.36659 6.88689 8.97607L5.49707 7.58625V20.3914C5.49707 20.9437 5.04936 21.3914 4.49707 21.3914C3.94479 21.3914 3.49707 20.9437 3.49707 20.3914V7.59224L2.11338 8.97604ZM11.224 4.27079C10.6718 4.27079 10.224 4.7185 10.224 5.27079C10.224 5.82307 10.6718 6.27079 11.224 6.27079H21.7994C22.3517 6.27079 22.7994 5.82307 22.7994 5.27079C22.7994 4.7185 22.3517 4.27079 21.7994 4.27079H11.224ZM10.224 9.75285C10.224 9.20056 10.6718 8.75285 11.224 8.75285H18.7973C19.3496 8.75285 19.7973 9.20056 19.7973 9.75285C19.7973 10.3051 19.3496 10.7528 18.7973 10.7528H11.224C10.6718 10.7528 10.224 10.3051 10.224 9.75285ZM11.224 13.2765C10.6718 13.2765 10.224 13.7242 10.224 14.2765C10.224 14.8288 10.6718 15.2765 11.224 15.2765H15.8872C16.4395 15.2765 16.8872 14.8288 16.8872 14.2765C16.8872 13.7242 16.4395 13.2765 15.8872 13.2765H11.224ZM11.224 17.769C10.6718 17.769 10.224 18.2167 10.224 18.769C10.224 19.3212 10.6718 19.769 11.224 19.769H13.0151C13.5673 19.769 14.0151 19.3212 14.0151 18.769C14.0151 18.2167 13.5673 17.769 13.0151 17.769H11.224Z"></path>
                             </svg>
                             <li>
                                 <a href="#" id="lowPrice" class="block px-1 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">по возрастанию стоимости</a>
@@ -84,7 +83,7 @@
                 <div id="container__with_tours" class="gap-10 grid grid-cols-1 md:grid-cols-2"></div>
 
 <!-- Модальное окно для выбора тура -->
-                <div id="add_modal" class="hidden flex-col m-auto bg-blue-100 fixed inset-0 justify-center rounded-2xl w-1/2 h-max px-2 py-2">
+                <div id="add_modal" class="hidden flex-col m-auto bg-blue-100 fixed inset-0 justify-center rounded-2xl w-full md:w-1/2 h-max px-2 py-2">
 
                     <div class="flex flex-row justify-end">
                         <svg id="close_modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
@@ -92,27 +91,27 @@
                         </svg>
                     </div>
 
-                    <div class="gap-5 grid grid-cols-1 md:grid-cols-2">
+                    <div class="gap-1 md:gap-5 grid grid-cols-2">
 <!-- Данные о выбранном туре -->
                         <div id="selectTour" class="px-3 py-2"></div>
                     
 <!-- Данные о покупателе-->
                         <fieldset class="flex flex-col gap-5 justify-between">
                             <div>
-                                <p class="text-xl">Ваша фамилия, имя *</p>
-                                <input class="rounded-xl w-full h-8" id="surnameClient"/>
+                                <p class="text-base md:text-xl mb-1">Ваша фамилия, имя *</p>
+                                <input class="rounded-xl w-full h-8" id="surnameClient" name="name" type="text"/>
                             </div>
                             <div>
-                                <p class="text-xl">Телефон *</p>
-                                <input class="rounded-xl w-full h-8" id="phoneClient"/>
+                                <p class="text-base md:text-xl mb-1">Телефон *</p>
+                                <input class="rounded-xl w-full h-8" id="phoneClient" name="phone" type="tel"/>
                             </div>
                             <div>
-                            <p class="text-xl">e-mail *</p>
-                                <input class="rounded-xl w-full h-8" id="mailClient"/>
+                            <p class="text-base md:text-xl mb-1">e-mail *</p>
+                                <input class="rounded-xl w-full h-8" id="mailClient" name="mail" type="email" />
                             </div>
                             <div>
-                                <p class="text-xl">Комментарий</p>
-                                <textarea class="rounded-xl w-full" id="commentClient"></textarea>
+                                <p class="text-base md:text-xl mb-1">Комментарий</p>
+                                <textarea class="rounded-xl w-full" id="commentClient" type="text"></textarea>
                             </div>
                             <button id="btn_order-tour" class="btn_style">Отправить заявку</button> 
                         </fieldset>
